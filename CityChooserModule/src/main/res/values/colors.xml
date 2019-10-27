@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="province_select_red">#fff65b47</color>
+    <!--侧边字母的颜色-->
+    <color name="siding_alpha_color_blue">#ff00a2ec</color>
+    <color name="navigation_bar_content_color">#ff000000</color>
+    <color name="search_container_color">#ffc9c9cc</color>
+
+</resources>

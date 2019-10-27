@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFCCCCCC"
+                android:padding="10dp">
+
+    <TextView
+        android:id="@+id/dialOrder"
+        style="@style/dialSmsStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="序号："/>
+
+    <TextView
+        android:id="@+id/phoneName"
+        style="@style/dialSmsStyle"
+        android:layout_alignBottom="@+id/dialOrder"
+        android:layout_alignTop="@+id/dialOrder"
+        android:layout_toRightOf="@+id/dialOrder"
+        android:text="联系人姓名"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/phone"
+        style="@style/dialSmsStyle"
+        android:layout_alignBottom="@+id/phoneName"
+        android:layout_alignTop="@+id/phoneName"
+        android:layout_toRightOf="@+id/phoneName"
+        android:text="手机号"/>
+
+    <ImageButton
+        android:id="@+id/dialIb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/phone"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/phone"
+        android:scaleType="center"
+        android:src="@drawable/dial_icon"/>
+
+</RelativeLayout>

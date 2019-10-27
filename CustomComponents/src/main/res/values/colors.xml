@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- title indicator textview background -->
+    <color name="tv_item_back">#FFF2F2F2</color>
+    <color name="initColor">#FF0B984B</color>
+    <color name="endColor">#FFC0DCCD</color>
+
+</resources>

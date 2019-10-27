@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:padding="6dp">
+
+    <ImageView
+        android:id="@+id/help_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        />
+
+    <TextView
+        android:id="@+id/help_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/large"
+        android:textColor="@color/black"
+        android:layout_below="@+id/help_icon"
+        android:gravity="center_horizontal"
+        android:text="打电话"/>
+
+    <TextView
+        android:id="@+id/help_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/little"
+        android:textColor="@color/dark_gray"
+        android:layout_below="@+id/help_label"
+        android:layout_marginTop="4dp"
+        android:text="给张三打电话"
+        android:gravity="center_horizontal"/>
+
+</RelativeLayout>

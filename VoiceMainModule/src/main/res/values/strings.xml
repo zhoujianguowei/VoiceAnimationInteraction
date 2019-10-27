@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">语音交互</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string-array name="time_array">
+        <item>1秒</item>
+        <item>2秒</item>
+        <item>3秒</item>
+        <item>5秒</item>
+        <item>8秒</item>
+        <item>10秒</item>
+        <item>20秒</item>
+        <item>60秒</item>
+    </string-array>
+    <string-array name="speed_volume_array">
+        <item>10</item>
+        <item>30</item>
+        <item>50</item>
+        <item>70</item>
+        <item>90</item>
+        <item>100</item>
+    </string-array>
+
+</resources>

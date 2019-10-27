@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            style="@style/query_contacts_style"
+            android:text="序号"
+            android:id="@+id/query_contancts_order"
+
+            />
+
+        <TextView
+            style="@style/query_contacts_style"
+            android:text="姓名"
+            android:id="@+id/query_contacts_name"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/shallow_red"
+            />
+
+        <TextView
+            style="@style/query_contacts_style"
+            android:id="@+id/query_contacts_phonenumber"
+            android:textColor="@color/shallow_green"
+            android:text="电话号码"
+
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dial_icon"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/query_contacts_dial"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

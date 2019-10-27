@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 语音听写控制画面的背景颜色 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <gradient
+        android:angle="90"
+        android:centerColor="#fff3f3f3"
+        android:endColor="#fff8f8f8"
+        android:startColor="#fff8f8f8">
+    </gradient>
+
+
+    <solid android:color="#fff3f3f3"/>
+
+</shape>

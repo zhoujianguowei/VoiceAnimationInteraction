@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffbebebe"
+
+    >
+
+    <TextView
+        android:id="@+id/sms_name"
+        style="@style/dialSmsStyle"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="姓名"
+        android:textColor="#ffff0000"/>
+
+    <TextView
+        android:id="@+id/sms_phone_number"
+        style="@style/dialSmsStyle"
+        android:layout_toRightOf="@+id/sms_name"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="手机号"/>
+
+    <ImageButton
+        android:id="@+id/sms_send_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sms_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/sms_name"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/sms_send"/>
+</RelativeLayout>
+
+

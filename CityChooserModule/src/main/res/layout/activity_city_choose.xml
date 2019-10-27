@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@android:color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+        android:background="#fff6f6f7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_bar_height">
+
+        <ImageView
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/activity_city_choose_iv_back"
+            android:src="@mipmap/icon_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/navigation_bar_content_color"
+            android:textSize="@dimen/x_large"
+            android:text="选择城市"
+            android:layout_gravity="center"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_bar_height"
+        android:background="#ffc9c9cc"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <AutoCompleteTextView
+                android:id="@+id/search_auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:completionThreshold="1"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/large"
+                android:background="@drawable/search_auto_background"
+                android:paddingLeft="30dp"
+                android:singleLine="true"
+                />
+
+            <ImageView
+                android:id="@+id/edit_search_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_search"
+                android:scaleType="centerInside"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="8dp"
+                android:visibility="invisible"/>
+
+            <RelativeLayout
+                android:id="@+id/search_rl_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_alignTop="@+id/search_auto"
+                android:layout_alignBottom="@+id/search_auto">
+
+                <ImageView
+                    android:id="@+id/search_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_search"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/search_small_content"
+                    />
+
+                <TextView
+                    android:id="@+id/search_small_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="搜索"
+                    android:textSize="@dimen/middle"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <FrameLayout
+            android:id="@+id/activity_city_choose_fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <FrameLayout
+            android:id="@+id/activity_alphabet_fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

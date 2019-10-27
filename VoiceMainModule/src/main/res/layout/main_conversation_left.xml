@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/leftConversationBg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/converstaionContentLeft"
+        android:layout_alignRight="@+id/converstaionContentLeft"
+        android:scaleType="fitXY"
+        android:src="@drawable/main_conversation_text_bg_left"/>
+
+    <TextView
+        android:id="@+id/converstaionContentLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center|left"
+        android:lineSpacingExtra="0.5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="8dp"
+        android:text="你是一个好人吗？"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

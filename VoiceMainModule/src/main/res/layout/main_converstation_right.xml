@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/conversationRightContentContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/rightConversationBg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/conversationContentFlContainer"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_conversation_text_bg_right"
+            />
+
+        <FrameLayout
+            android:id="@+id/conversationContentFlContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            >
+
+            <TextView
+                android:id="@+id/converstaionContentRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:lineSpacingExtra="0.5dp"
+                android:paddingLeft="8dp"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:id="@+id/conversationContentEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="left"
+                android:inputType="textMultiLine"
+                android:lineSpacingExtra="0.5dp"
+                android:paddingLeft="8dp"
+                android:scrollHorizontally="false"
+                android:singleLine="false"
+                android:textSize="20sp"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/edit_conversation_right"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignBottom="@+id/conversationContentFlContainer"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:paddingTop="4dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/main_conversation_edit_icon"
+
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rightOptionContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/conversationRightContentContainer"
+        android:layout_alignRight="@+id/conversationRightContentContainer"
+        android:layout_below="@+id/conversationRightContentContainer"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <Button
+            android:id="@+id/rightEnsureOption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/sms_send_color"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/large"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"/>
+
+        <Button
+            android:id="@+id/rightCancelOption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/sms_cancel_color"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/large"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+
+        <ImageView
+            android:id="@+id/setting_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/icon_back"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/large"
+            android:layout_alignTop="@+id/setting_back"
+            android:layout_alignBottom="@+id/setting_back"
+            android:layout_centerInParent="true"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black"
+        android:layout_alignParentBottom="@+id/setting_back"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                style="@style/setting_lable_style"
+                android:text="前端超时\n5秒"
+                android:id="@+id/setting_vad_box"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/dark_gray"/>
+
+            <TextView
+                style="@style/setting_lable_style"
+                android:text="后端超时\n3秒"
+                android:id="@+id/setting_vad_eox"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/dark_gray"/>
+
+            <TextView
+                style="@style/setting_lable_style"
+                android:text="朗读声音\n50"
+                android:id="@+id/setting_volume"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/dark_gray"/>
+
+            <TextView
+                style="@style/setting_lable_style"
+
+                android:text="听写速度\n30"
+                android:id="@+id/setting_speed"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/dark_gray"/>
+
+            <TextView
+                android:id="@+id/setting_change_city"
+                style="@style/setting_lable_style"
+                android:text="切换城市\n四川成都"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

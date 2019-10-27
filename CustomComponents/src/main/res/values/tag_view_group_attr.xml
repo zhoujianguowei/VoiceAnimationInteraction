@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="tag_view_group">
+        <attr name="viewHspace" format="dimension|reference"></attr>
+        <attr name="viewVspace" format="dimension|reference"></attr>
+        <attr name="backgroundColor" format="color|reference">#ff00cccc</attr>
+    </declare-styleable>
+
+</resources>

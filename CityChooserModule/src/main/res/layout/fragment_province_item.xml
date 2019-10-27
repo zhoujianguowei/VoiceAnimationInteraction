@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_margin="10dp"
+        android:textSize="@dimen/middle"
+        android:hint="省"
+        android:layout_gravity="center_vertical|start"
+        android:id="@+id/fragment_province_tv_province"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+
+    <TextView
+        android:textSize="@dimen/middle"
+        android:layout_margin="10dp"
+        android:drawableEnd="@mipmap/icon_right_arrow"
+        android:drawableRight="@mipmap/icon_right_arrow"
+        android:layout_gravity="center_vertical|end"
+        android:id="@+id/fragment_province_tv_chosen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</FrameLayout>
